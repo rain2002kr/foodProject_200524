@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/bt_side_scr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="@+id/bt_beverage_scr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_beverage_scr"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:srcCompat="@drawable/side_menu" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="사이드"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_side_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_side_scr"
+        app:layout_constraintTop_toBottomOf="@+id/bt_side_scr" />
+
+    <ImageView
+        android:id="@+id/bt_season_scr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_side_scr"
+        app:layout_constraintEnd_toEndOf="@+id/bt_special_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_special_scr"
+        app:layout_constraintTop_toTopOf="@+id/bt_side_scr"
+        app:srcCompat="@drawable/season_menu" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="시즌"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_season_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_season_scr"
+        app:layout_constraintTop_toBottomOf="@+id/bt_season_scr" />
+
+    <ImageView
+        android:id="@+id/bt_special2_scr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_special_scr"
+        app:layout_constraintEnd_toEndOf="@+id/bt_set_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_set_scr"
+        app:layout_constraintTop_toTopOf="@+id/bt_special_scr"
+        app:srcCompat="@drawable/vip_spcial" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="스페셜2"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_special2_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_special2_scr"
+        app:layout_constraintTop_toBottomOf="@+id/bt_special2_scr" />
+
+    <ImageView
+        android:id="@+id/bt_rice_scr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_nuddle_scr"
+        app:layout_constraintEnd_toStartOf="@+id/bt_set_scr"
+        app:layout_constraintStart_toEndOf="@+id/bt_nuddle_scr"
+        app:layout_constraintTop_toTopOf="@+id/bt_nuddle_scr"
+        app:srcCompat="@drawable/rice" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="밥 식사류"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_rice_scr"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/bt_rice_scr"
+        app:layout_constraintTop_toBottomOf="@+id/bt_rice_scr" />
+
+    <ImageView
+        android:id="@+id/bt_nuddle_scr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ramen" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="면 류"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_nuddle_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_nuddle_scr"
+        app:layout_constraintTop_toBottomOf="@+id/bt_nuddle_scr" />
+
+    <ImageView
+        android:id="@+id/bt_beverage_scr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_nuddle_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_nuddle_scr"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/beverage" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="음료/주류"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_beverage_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_beverage_scr"
+        app:layout_constraintTop_toBottomOf="@+id/bt_beverage_scr" />
+
+    <ImageView
+        android:id="@+id/bt_set_scr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="32dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_rice_scr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_rice_scr"
+        app:srcCompat="@drawable/set_menu" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="세트 메뉴"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_set_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_set_scr"
+        app:layout_constraintTop_toBottomOf="@+id/bt_set_scr" />
+
+    <ImageView
+        android:id="@+id/bt_special_scr"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_beverage_scr"
+        app:layout_constraintEnd_toEndOf="@+id/bt_rice_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_rice_scr"
+        app:layout_constraintTop_toTopOf="@+id/bt_beverage_scr"
+        app:srcCompat="@drawable/discout_special" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="스페셜1"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_special_scr"
+        app:layout_constraintStart_toStartOf="@+id/bt_special_scr"
+        app:layout_constraintTop_toBottomOf="@+id/bt_special_scr" />
+
+    <ImageView
+        android:id="@+id/img_table_show"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/touch_tableHomeScreen"
+        app:layout_constraintStart_toStartOf="@+id/touch_tableHomeScreen"
+        app:layout_constraintTop_toTopOf="@+id/touch_tableHomeScreen"
+        app:srcCompat="@drawable/dinner_table" />
+
+    <TextView
+        android:id="@+id/txtTableText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="테이블 번호 :"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_table_show"
+        app:layout_constraintStart_toEndOf="@+id/img_table_show"
+        app:layout_constraintTop_toTopOf="@+id/img_table_show" />
+
+    <TextView
+        android:id="@+id/txtTableNo_show"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTableText"
+        app:layout_constraintStart_toEndOf="@+id/txtTableText"
+        app:layout_constraintTop_toTopOf="@+id/txtTableText" />
+
+    <FrameLayout
+        android:id="@+id/touch_tableHomeScreen"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        android:background="#3300BCD4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

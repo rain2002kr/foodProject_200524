@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새로고침"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <EditText
+        android:id="@+id/ed_orderList"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="163dp"
+        android:ems="10"
+        android:hint="주문번호"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bt_read"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="311dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/ed_orderList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_orderListing"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/txt_cooked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txt_paid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bt_etc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기타"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_read"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_read" />
+
+    <Button
+        android:id="@+id/bt_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전송"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_read"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bt_read" />
+
+    <Button
+        android:id="@+id/bt_ResetNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="제로셋"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_orderList" />
+
+    <Button
+        android:id="@+id/bt_countUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주문"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_ResetNumber"
+        app:layout_constraintStart_toEndOf="@+id/bt_ResetNumber"
+        app:layout_constraintTop_toTopOf="@+id/bt_ResetNumber" />
+
+    <Button
+        android:id="@+id/bt_cooked1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쿠킹완료"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_countUp"
+        app:layout_constraintStart_toEndOf="@+id/bt_countUp"
+        app:layout_constraintTop_toTopOf="@+id/bt_countUp" />
+
+    <Button
+        android:id="@+id/bt_cookedfinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쿠킹삭제및로드"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_cooked1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bt_cooked1"
+        app:layout_constraintTop_toTopOf="@+id/bt_cooked1" />
+
+    <Button
+        android:id="@+id/bt_paid1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="계산완료"
+        app:layout_constraintEnd_toEndOf="@+id/bt_ResetNumber"
+        app:layout_constraintStart_toStartOf="@+id/bt_ResetNumber"
+        app:layout_constraintTop_toBottomOf="@+id/bt_ResetNumber" />
+
+    <Button
+        android:id="@+id/bt_paid_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="계산대기삭제및로드"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_paid1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bt_paid1"
+        app:layout_constraintTop_toTopOf="@+id/bt_paid1" />
+
+    <EditText
+        android:id="@+id/ed_cookedFinish"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="조리완료"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_orderList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ed_orderList"
+        app:layout_constraintTop_toTopOf="@+id/ed_orderList" />
+
+    <EditText
+        android:id="@+id/ed_paidFinish"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="계산완료"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ed_cookedFinish"
+        app:layout_constraintStart_toEndOf="@+id/ed_cookedFinish"
+        app:layout_constraintTop_toTopOf="@+id/ed_cookedFinish" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
